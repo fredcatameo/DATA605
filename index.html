@@ -37,7 +37,7 @@
           overflow: hidden;
           padding-top: 56.25%; /* 16:9 Aspect Ratio */
         }
-        h1, h3, p {
+        h1, h2, p {
             text-align: center;
         }
         h1 {
@@ -76,7 +76,7 @@
             <p>The Bank of Canada announces interest rate adjustments on eight scheduled Wednesdays yearly (htt5).&nbsp; There was one last December 11, 2024, which, a few days before, the master research paper correctly hinted that the Bank of Canada will lower policy interest rates since it was also observed that the core inflation has already gone down (htt6).&nbsp; On January 29, 2025, Bank of Canada further reduced the policy rate to 3% (htt7).&nbsp; The next scheduled announcement is on March 12, 2025 (htt8).&nbsp; With the latest uncertainty brought on by the looming U.S tariffs on Canadian goods, can it somehow be predicted (using a machine learning model) if this would be a major or minor hike, cut, or a hold?</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <h3><strong>How changes in policy interest rate influence inflation</strong></h3>
+            <h2><strong>How changes in policy interest rate influence inflation</strong></h2>
             <p>A higher policy interest rate essentially makes borrowing money and paying off debt more expensive.&nbsp; It tightens people&rsquo;s pockets having less to spend.&nbsp; It reduces the demand for goods and services.&nbsp; This low demand in turn, decreases inflation by slowing down how fast prices rise (htt9).&nbsp;&nbsp; A good measure of households&rsquo; financial vulnerability to unexpected shocks such as unemployment, illness, or interest rate hikes is the debt-to-income ratio (htt10).&nbsp;</p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; debt-to-income ratio = total debt payments / gross household income</p>
             <p>However, what really matters most is the households&rsquo; debt service coverage ratio which measures the ability to pay off or service its existing debt.&nbsp; It is a widely used indicator of a household&rsquo;s financial health.&nbsp; It is computed by dividing the net operating income, which is the revenue minus certain operating expenses or also equal to the earnings before interest and tax (EBIT), over the total debt service, which is the current debt obligations including any interest, principal, etc. due in the coming year.&nbsp; Note that this is directly impacted by changes in policy interest rate. &nbsp;A DSCR of at least 1.20 to 2.00 is typically considered good to strong (htt18).</p>
@@ -93,7 +93,7 @@
         <div class="content">
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <h3><strong>How policy interest rate is related to GDP</strong></h3>
+            <h2><strong>How policy interest rate is related to GDP</strong></h2>
             <p>Gross domestic product, as defined in Investopedia, is the total monetary or market value of all the finished goods and services produced within a country in a specific time period (htt12).&nbsp; From Economics 101:</p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GDP = Consumer spending + Government spending + Investment + Net exports (Balance of trade)</p>
             <p>We have ascertained earlier that consumer spending is influenced strongly by policy interest rate and inflation.&nbsp;&nbsp; Business investments are also directly affected by policy interest rate hikes because borrowing costs for capital increases.&nbsp; One way to boost economic growth and GDP is by lowering the policy interest rate to stimulate consumer spending, economic activity, and business investments.&nbsp;&nbsp;</p>
@@ -110,7 +110,7 @@
             <p style="text-align: center;"><a name="_Toc189993610"></a>Figure 7: Correlation Matrix of Inflation, Policy Interest Rate, Debt-to-Income Ratio, GDP</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <h3><strong>A machine learning model to predict policy interest rate change</strong></h3>
+            <h2><strong>A machine learning model to predict policy interest rate change</strong></h2>
             <p>There is a formula called the Taylor Rule invented by famed economist John Taylor in 1992 which serves as simplistic general rule of thumb for central banks in setting the policy interest rate.&nbsp; It essentially aims to suggest the nominal policy interest rate that will close the gap between the current and the target core inflation and real GDP (htt16).&nbsp;&nbsp; &nbsp;As defined in Investopedia, real GDP is nominal GDP adjusted for inflation (htt17).</p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nominal policy interest rate = neutral real policy interest rate + 0.5*(current inflation rate &ndash; target inflation rate)</p>
             <p style="text-align: center;">+ 05*(logarithm of real GDP &ndash; logarithm of potential GDP)</p>
