@@ -162,32 +162,32 @@
         <div class="content"> 
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <p>A third model was built similar to the second model but employed principal component analysis dimensionality reduction. &nbsp;Root mean square and R-squared for model #3 was .</p>
+            <p>A third model was built similar to the second model but employed principal component analysis dimensionality reduction. Statistical checks on the dataset failed for linearity, normality, and homoscedasticity which prompted the need to try UMAP (Uniform Manifold Approximation and Projection dimensionality reduction.&nbsp;</p>
+        </div>
+    </div>
+                <div align="center" class="iframe-container"><iframe class="responsive-iframe" src="./5Model2_RFvsGB.html"></iframe>
+                <p align="left">Figure 8: ML Model 3 with 4 predictors using PCA and UMAP prior to Random Forest and Gradient Boosting regression</p></div>
+    <div class="container">
+        <div class="content"> 
             <p>&nbsp;</p>
             <p>&nbsp;</p>
+            <p>All in all, comparison of MSE and R-squared between models shows that model # ___ is the best performing.</p>
             <p>&nbsp;</p>
-            <p>Before proceeding further, the stationarity of the time-series data was checked visually and statistically using Augmented Dickey-Fuller and the Kwiatkowski-Phillips-Schmidt-Shin (KPSS) tests to ensure that the date can be safely disregarded in the time-series data without overlooking essential temporal dependencies, trends or seasonality.&nbsp;&nbsp; This confirms that it is safe to treat the dataset as purely cross-sectional without any time-related aspects, and that time-series preprocessing best practices such as differencing or detrending, as well as, the creating lagged features for retaining some temporal context.&nbsp; This is the code for the ADF and KPSS tests (htt19).&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>A fourth model was built trained on differenced and detrended historical core inflation, real GDP, and unemployment rate.&nbsp; Root mean square and R-squared for model #4 was .</p>
-            <p>&nbsp; &nbsp;</p>
-            <p><strong>&nbsp;</strong></p>
-            <p><strong>&nbsp;</strong></p>
-            <p>Lastly, a fifth model (model #4) was built using a popular statistical method for time series forecasting &ndash; ARIMA, which stands for Auto-Regressive Integrated Moving Averages (htt20).&nbsp; Root mean square and R-squared for model #5 was .</p>
-            <p>&nbsp;</p>
-            <p>All in all, comparison of RMSE and R-squared between models shows that model # is the best performing.</p>
-            <p>&nbsp;</p>
-            <p>In summary, policy interest rate is the Bank of Canada&rsquo;s primary means of regulating inflation and attaining GDP targets.&nbsp;&nbsp; It is through the direct influence of policy interest rate (and its direct influence on interest on debt) on the households&rsquo; and business&rsquo; debt service ratio that it can indirectly stabilize core inflation and stimulate economic GDP growth.&nbsp; In real-life, the equation to predict the ideal policy interest rate is not as simple as the classic Taylor Rule, since there are other unpredictable, complex, or abstract factors at play such as the weather, a pandemic, unemployment, population growth, U.S tariffs, the foreign exchange rate (foreign investment confidence), etc.&nbsp; This is an unserious or preliminary attempt on a machine learning model to predict policy interest rate based on key predictors &ndash; core inflation, GDP, and unemployment rate. &nbsp;Definitely, the final model can be revisited and refined further in the future.</p>
+            <p>In summary, policy interest rate is the Bank of Canada&rsquo;s primary means of regulating inflation and attaining GDP targets.&nbsp;&nbsp; It is through the direct influence of policy interest rate (and its direct influence on interest on debt) on the households&rsquo; and business&rsquo; debt service ratio that it can indirectly stabilize core inflation and stimulate economic GDP growth.&nbsp; In real-life, the equation to predict the ideal policy interest rate is not as simple as the classic Taylor Rule, since there are other unpredictable, complex, or abstract factors at play such as the weather, a pandemic, unemployment, population growth, U.S tariffs, the foreign exchange rate (foreign investment confidence), etc.&nbsp; This is an unserious or preliminary attempt on a machine learning model to predict policy interest rate based on key predictors &ndash; core inflation, GDP, unemployment rate, and forex rate. 
+                One more thing to note is that since time-series data is being dealt with in this case, the stationarity of the data need to be checked to confirm that it is safe to treat the dataset as purely cross-sectional without any time-related aspects and without overlooking any essential temporal dependencies, trends or seasonality.&nbsp;&nbsp; 
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p><strong>&nbsp;</strong></p>
             <p>&nbsp;</p>
             <h1>Table of Figures</h1>
-            <p><a href="#_Toc189993606">Figure 1: Historical Core Inflation and Policy Interest Rate.. 2</a></p>
-            <p><a href="#_Toc189993607">Figure 2: Historical Debt-to-Income Ratio Canadian households. 4</a></p>
-            <p><a href="#_Toc189993608">Figure 3: Consumer spending contribution to Canada's GDP.. 4</a></p>
-            <p><a href="#_Toc189993609">Figure 4: Share of U.S. in Canada's Balance of Trade. 5</a></p>
-            <p><a href="#_Toc189993610">Figure 5: Correlation Matrix of Inflation, Policy Interest Rate, Debt-to-Income Ratio, GDP.. 5</a></p>
+            <p>Figure 1: Historical Core Inflation and Policy Interest Rate</p>
+            <p>Figure 2: Historical Debt-to-Income Ratio Canadian households</p>
+            <p>Figure 3: Consumer spending contribution to Canada's GDP</p>
+            <p>Figure 4: Share of U.S. in Canada's Balance of Trade</p>
+            <p>Figure 5: Correlation Matrix of Inflation, Policy Interest Rate, Debt-to-Income Ratio, GDP</p>
+            <p>Figure 6: ML Model 1 with 2 predictors using Random Forest and Gradient Boosting regression</p>
+            <p>Figure 7: ML Model 2 with 4 predictors using Random Forest and Gradient Boosting regression</p>
+            <p>Figure 8: ML Model 3 with 4 predictors using PCA and UMAP prior to Random Forest and Gradient Boosting regression</p>
             <p><br /> &nbsp;</p>
             <h1>References</h1>
             <p>(n.d.). Retrieved from https://www.bankofcanada.ca/2022/04/understanding-policy-interest-rate/</p>
