@@ -14,6 +14,12 @@
             line-height: 1.6;
             text-align: center;
         }
+        .overall-container {
+            max-width: 1500px;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #fff;
+        }
         .container {
             max-width: 800px;
             margin: 10px auto;
@@ -65,6 +71,7 @@
     </style>
 </head>
 <body>
+    <div class="overall-container">
     <div class="container">
         <p class="title">Bank of Canada Lowers Interest Rates: Analyzing the Implications and Predicting with a Machine Learning Model</p>
         <p class="author">Fred Catameo</p>
@@ -174,7 +181,7 @@
             <p>All in all, comparison of MSE and R-squared between models shows that model # ___ is the best performing.</p>
             <p>&nbsp;</p>
             <p>In summary, policy interest rate is the Bank of Canada&rsquo;s primary means of regulating inflation and attaining GDP targets.&nbsp;&nbsp; It is through the direct influence of policy interest rate (and its direct influence on interest on debt) on the households&rsquo; and business&rsquo; debt service ratio that it can indirectly stabilize core inflation and stimulate economic GDP growth.&nbsp; In real-life, the equation to predict the ideal policy interest rate is not as simple as the classic Taylor Rule, since there are other unpredictable, complex, or abstract factors at play such as the weather, a pandemic, unemployment, population growth, U.S tariffs, the foreign exchange rate (foreign investment confidence), etc.&nbsp; This is an unserious or preliminary attempt on a machine learning model to predict policy interest rate based on key predictors &ndash; core inflation, GDP, unemployment rate, and forex rate. 
-                One more thing to note is that since time-series data is being dealt with in this case, the stationarity of the data need to be checked to confirm that it is safe to treat the dataset as purely cross-sectional without any time-related aspects and without overlooking any essential temporal dependencies, trends or seasonality.&nbsp;&nbsp; 
+                One more thing to note is that since time-series data is being dealt with in this case, the stationarity of the data needs to be checked to confirm that it is safe to treat the dataset as purely cross-sectional without any time-related aspects and without overlooking any essential temporal dependencies, trends or seasonality.&nbsp;&nbsp; 
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p><strong>&nbsp;</strong></p>
@@ -214,6 +221,7 @@
             <p>&nbsp;</p>
             <p>&nbsp;</p>
         </div>
+    </div>
     </div>
 </body>
 </html>
