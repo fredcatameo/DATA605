@@ -207,7 +207,7 @@
                 homoscedasticity which suggests the need to try alternative dimensionality reduction methods in the future, perhaps UMAP (Uniform Manifold Approximation and Projection.&nbsp;</p>
         </div>
     </div>
-                <div align="center" class="iframe-container"><iframe class="responsive-iframe" src="./5Model2_RFvsGB.html"></iframe>
+                <div align="center" class="iframe-container"><iframe class="responsive-iframe" src="./5Model3_RFwithPCA.html"></iframe>
                 </div>
     <div class="container">
         <div class="content"> 
@@ -219,11 +219,17 @@
                 It is through the direct influence of policy interest rate (and its direct influence on interest on debt) on the households&rsquo; and business&rsquo; debt service ratio 
                 that it can indirectly stabilize core inflation and stimulate economic GDP growth.  In real-life, the equation to predict the ideal policy interest rate is not as simple as the classic Taylor Rule, 
                 since there are other unpredictable, complex, or abstract factors at play such as the weather, a pandemic, unemployment, population growth, U.S tariffs, the foreign exchange rate (foreign investment confidence), 
-                etc.  This is an unserious or preliminary attempt on a machine learning model to predict policy interest rate based on key predictors &ndash; core inflation, GDP, unemployment rate, and forex rate. 
+                etc.</p>
+            <p>Policy interest rates influence or regulate consumer spending which is the biggest contributor to GDP.  As a side note, net exports (balance of trade) is affected by the foreign exchange rate 
+                which is also indirectly affected by the policy interest rate.  Due to the huge portion of Canada's exports and imports to and from the U.S., Canada is negatively affected by the looming U.S. tariffs.
+            </p>
+            <p>This is a preliminary attempt on a machine learning model to predict policy interest rate based on key predictors &ndash; core inflation, GDP, unemployment rate, and forex rate.  Ensemble methods, Random Forest
+                and Gradient Boosting regressions were used for comparison of R-squared and MSE metrics.  Random Forest regression was also combined with principal component analysis dimensionality reduction 
+                to compare model performance.  Further work can be done with hyperparameter tuning of n_estimators and max_depth for the Random Forest models, as well as, cross-validation to check for overfitting.
                 One more thing to note is that since time-series data is being dealt with in this case, the stationarity of the data needs to be checked to confirm that it is safe to treat the dataset as 
                 purely cross-sectional without any time-related aspects and without overlooking any essential temporal dependencies, trends or seasonality.
                 Popular time-series forecasting techniques such as ARIMA (Autoregressive Integrated Moving Average) is also worth looking into.
-                Definitely, this predictive model will be revisited and refined further in the future.
+                Definitely, this predictive model will be revisited and refined further in the future.</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p><strong>&nbsp;</strong></p>
