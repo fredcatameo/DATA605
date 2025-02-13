@@ -216,7 +216,17 @@
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>All in all, comparison of MSE and R-squared between models shows that the best performing model # 2 Gradient Boosting, followed by model # 2 Random Forest.  This is with a Train-Test-Split model validation.
-            To further validate the model, Leave-One-Out Cross Validation (suitable for small datasets) will be used.</p>
+            To further validate model robustness, K-Fold Cross Validation (k=10) will be used.</p>
+                <img src="ModelStatsSummary.png" alt="Figure 10: ML Model Statisitcs Summary" width="600" height="500">
+                <p align="center">Figure 10: ML Model Statisitcs Summary</p>
+            <p>&nbsp;</p>
+            <p>Hyperparameter tuning for Random Forest was done using GridSearchCV.</p>
+                <img src="RandomForestReg_GridSearchCV_HyperparamTuning.png" alt="Figure 11: ML Model 2 Random Forest Hyperparameter Tuning with GridSearchCV" width="600" height="500">
+                <p align="center">Figure 11: ML Model 2 Random Forest Hyperparameter Tuning with GridSearchCV</p>
+            <p>Overfitting is suspected though because the training error on the learning curve for the Random Forest Regression is a constant zero.</p>
+                <img src="RandomForestReg_ZeroTrainingError_Overfitting.png" alt="Figure 12: ML Model 2 Random Forest Learning Curve Zero Training Error" width="600" height="500">
+                <p align="center">Figure 12: ML Model 2 Random Forest Learning Curve Zero Training Error</p>
+            <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>In summary, policy interest rate is the Bank of Canada&rsquo;s primary means of regulating inflation and attaining GDP targets. 
                 It is through the direct influence of policy interest rate (and its direct influence on interest on debt) on the households&rsquo; and business&rsquo; debt service ratio 
@@ -228,7 +238,9 @@
             </p>
             <p>This is a preliminary attempt on a machine learning model to predict policy interest rate based on key predictors &ndash; core inflation, GDP, unemployment rate, and forex rate.  Ensemble methods, Random Forest
                 and Gradient Boosting regressions were used for comparison of R-squared and MSE metrics.  Random Forest regression was also combined with principal component analysis dimensionality reduction 
-                to compare model performance.  Further work can be done with hyperparameter tuning of n_estimators and max_depth for the Random Forest models, as well as, cross-validation to check for overfitting.
+                to compare model performance.  GridSearchCV was used for hyperparameter tuning of the Random Forest regression model.  Model robustnes was checked using Train-Test-Split and K-Fold cross validation with k=10.
+                However, in the end, I still suspect there is overfitting because the R-squared is much too high and the training error on the learning curve was constantly zero.  Perhaps, the dataset size of 334 is too small. 
+                Only time will tell, when the next Bank of Canada policy interest rate announcement, can we test the model in the actual real world.
                 One more thing to note is that since time-series data is being dealt with in this case, the stationarity of the data needs to be checked to confirm that it is safe to treat the dataset as 
                 purely cross-sectional without any time-related aspects and without overlooking any essential temporal dependencies, trends or seasonality.
                 Popular time-series forecasting techniques such as ARIMA (Autoregressive Integrated Moving Average) is also worth looking into.
@@ -247,6 +259,9 @@
             <p>Figure 7: ML Model 2 with 4 predictors using Random Forest and Gradient Boosting regression</p>
             <p>Figure 8: ML Model 3 with 4 predictors using PCA and UMAP prior to Random Forest and Gradient Boosting regression</p>
             <p>Figure 9: ML Model 3: 4 predictors reduced to 2 PCA components</p>
+            <p>Figure 10: ML Model Statisitcs Summary</p>
+            <p>Figure 11: ML Model 2 Random Forest Hyperparameter Tuning with GridSearchCV</p>
+            <p>Figure 12: ML Model 2 Random Forest Learning Curve Zero Training Error</p>
             <p><br /> &nbsp;</p>
             <h3>References</h3>
             <p>(n.d.). Retrieved from https://www.bankofcanada.ca/2022/04/understanding-policy-interest-rate/</p>
