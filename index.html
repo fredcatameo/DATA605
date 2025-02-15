@@ -224,9 +224,13 @@
                 <img src="RandomForestReg_GridSearchCV_HyperparamTuning.png" alt="Figure 11: ML Model 2 Random Forest Hyperparameter Tuning with GridSearchCV">
                 <p align="center">Figure 11: ML Model 2 Random Forest Hyperparameter Tuning with GridSearchCV</p>
             <p>&nbsp;</p>
+            <p>Importance of features are shown in this chart based on Gini importance.</p>
+                <img src="Model2_RF_FeatureImportance.png" alt="Figure 12: ML Model 2 Random Forest Feature Importance">
+                <p align="center">Figure 12: ML Model 2 Random Forest Feature Importance</p>
+            <p>&nbsp;</p>            
             <p>Overfitting is suspected though because the training error on the learning curve for the Random Forest Regression is a constant zero.</p>
-                <img src="RandomForestReg_ZeroTrainingError_Overfitting.png" alt="Figure 12: ML Model 2 Random Forest Learning Curve Zero Training Error" width="600" height="500">
-                <p align="center">Figure 12: ML Model 2 Random Forest Learning Curve Zero Training Error</p>
+                <img src="RandomForestReg_ZeroTrainingError_Overfitting.png" alt="Figure 13: ML Model 2 Random Forest Learning Curve Zero Training Error" width="600" height="500">
+                <p align="center">Figure 13: ML Model 2 Random Forest Learning Curve Zero Training Error</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <h2><strong>Conclusion</strong></h2>
@@ -241,7 +245,7 @@
             <p>This is a preliminary attempt on a machine learning model to predict policy interest rate based on key predictors &ndash; core inflation, GDP, unemployment rate, and forex rate.  Ensemble methods, Random Forest
                 and Gradient Boosting regressions were used for comparison of R-squared and MSE metrics.  Random Forest regression was also combined with principal component analysis dimensionality reduction 
                 to compare model performance.  GridSearchCV was used for hyperparameter tuning of the Random Forest regression model.  Model robustnes was checked using Train-Test-Split and K-Fold cross validation with k=10.
-                However, in the end, I still suspect there is overfitting because the R-squared is much too high and the training error on the learning curve was constantly zero.  Perhaps, the dataset size of 334 is too small. 
+                However, in the end, I still suspect there is overfitting because the R-squared is much too high and the training error on the learning curve was constantly zero. 
                 Only time will tell, when the next Bank of Canada policy interest rate announcement, can we test the model in the actual real world.
                 One more thing to note is that since time-series data is being dealt with in this case, the stationarity of the data needs to be checked to confirm that it is safe to treat the dataset as 
                 purely cross-sectional without any time-related aspects and without overlooking any essential temporal dependencies, trends or seasonality.
@@ -275,7 +279,8 @@
             <p>Figure 9: ML Model 3: 4 predictors reduced to 2 PCA components</p>
             <p>Figure 10: ML Model Statistics Summary</p>
             <p>Figure 11: ML Model 2 Random Forest Hyperparameter Tuning with GridSearchCV</p>
-            <p>Figure 12: ML Model 2 Random Forest Learning Curve Zero Training Error</p>
+            <p>Figure 12: ML Model 2 Random Forest Feature Importance</p>
+            <p>Figure 13: ML Model 2 Random Forest Learning Curve Zero Training Error</p>
             <p><br /> &nbsp;</p>
             <h3>References</h3>
             <p>(n.d.). Retrieved from https://www.bankofcanada.ca/2022/04/understanding-policy-interest-rate/</p>
