@@ -245,7 +245,7 @@
             <p>This is a preliminary attempt on a machine learning model to predict policy interest rate based on key predictors &ndash; core inflation, GDP, unemployment rate, and forex rate.  Ensemble methods, Random Forest
                 and Gradient Boosting regressions were used for comparison of R-squared and MSE metrics.  Random Forest regression was also combined with principal component analysis dimensionality reduction 
                 to compare model performance.  GridSearchCV was used for hyperparameter tuning of the Random Forest regression model.  Model robustnes was checked using Train-Test-Split and K-Fold cross validation with k=10.
-                However, in the end, I still suspect there is overfitting because the R-squared is much too high and the training error on the learning curve was constantly zero. 
+                However, in the end, overfitting is suspected because the R-squared is much too high and the training error on the learning curve was constantly zero. 
                 Only time will tell, when the next Bank of Canada policy interest rate announcement, can we test the model in the actual real world.
                 One more thing to note is that since time-series data is being dealt with in this case, the stationarity of the data needs to be checked to confirm that it is safe to treat the dataset as 
                 purely cross-sectional without any time-related aspects and without overlooking any essential temporal dependencies, trends or seasonality.
